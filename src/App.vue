@@ -19,6 +19,7 @@ export default {
     <AppNav></AppNav>
     <AppMainContent></AppMainContent>
     <AppMerch></AppMerch>
+
     <AppFooter></AppFooter>
 </template>
 
