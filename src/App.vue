@@ -1,9 +1,11 @@
 <script>
 import AppNav from './components/AppNav.vue';
+import AppMainContent from './components/AppMainContent.vue';
 
 export default {
   components: {
     AppNav,
+    AppMainContent,
 }
 }
 
@@ -11,6 +13,7 @@ export default {
 
 <template>
     <AppNav></AppNav>
+    <AppMainContent></AppMainContent>
 </template>
 
 <style lang="scss">
