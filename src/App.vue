@@ -20,5 +20,14 @@ export default {
 </template>
 
 <style lang="scss">
+
+// container in comune
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+}
 </style>
 

@@ -34,17 +34,19 @@ export default {
 
 <template>
     <section id="merch">
-        <div
-        v-for="(cards, index) in cards"
-         class="cards">
-
-         <div class="img_container">
-             <img :src="cards.image" alt="">
-         </div>
-         <span>
-             {{ cards.text }}
-         </span>
-
+        <div class="container">
+            <div
+            v-for="(cards, index) in cards"
+             class="cards">
+    
+             <div class="img_container">
+                 <img :src="cards.image" alt="">
+             </div>
+             <span>
+                 {{ cards.text }}
+             </span>
+    
+            </div>
         </div>
 
     </section>
@@ -55,14 +57,14 @@ export default {
 @use '../styles/variables' as *;
 
  #merch {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 70px;
-
-    padding: 50px 44px;
-    background-color: $primaryColor;
-
+     padding: 50px 10px;
+     background-color: $primaryColor;
+     
+     .container {
+         justify-content: center;
+         gap: 70px;
+         
+    }
     .cards{
         display: flex;
         align-items: center;
@@ -76,6 +78,9 @@ export default {
                 width: 100%;
                 object-fit: contain;
             }
+        }
+        span {
+            text-transform: uppercase;
         }
     }
 }
