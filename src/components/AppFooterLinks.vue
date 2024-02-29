@@ -117,6 +117,7 @@ export default {
             padding-bottom: 6px;
             opacity: 0.6;
             font-size: 10px;
+            cursor: pointer;
           }
         }
       }

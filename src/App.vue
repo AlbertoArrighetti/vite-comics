@@ -1,14 +1,12 @@
 <script>
 import AppNav from './components/AppNav.vue';
 import AppMainContent from './components/AppMainContent.vue';
-import AppMerch from './components/AppMerch.vue';
 import AppFooter from './components/AppFooter.vue';
 
 export default {
   components: {
     AppNav,
     AppMainContent,
-    AppMerch,
     AppFooter,
 }
 }
@@ -18,7 +16,6 @@ export default {
 <template>
     <AppNav></AppNav>
     <AppMainContent></AppMainContent>
-    <AppMerch></AppMerch>
 
     <AppFooter></AppFooter>
 </template>

@@ -81,6 +81,7 @@ export default {
         }
         span {
             text-transform: uppercase;
+            cursor: pointer;
         }
     }
 }

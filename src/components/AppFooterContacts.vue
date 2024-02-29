@@ -57,6 +57,12 @@ export default {
             font-weight: bold;
     
             border: 2px solid $primaryColor;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $primaryColor;
+                border-color: white;
+            }
         }
         #socials{
             display: flex;
@@ -66,11 +72,16 @@ export default {
             span {
                 text-transform: uppercase;
                 color: $primaryColor;
+                cursor: pointer;
             }
             
             #logos{
                 display: flex;
                 gap: 18px;
+
+                img {
+                    cursor: pointer;
+                }
             }
         }
     }
