@@ -36,6 +36,8 @@ export default {
 
 
 <style lang="scss">
+@use '../styles/variables' as *;
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -62,9 +64,9 @@ nav {
       cursor: pointer;
 
       &:hover{
-        color: #0c7cec;
+        color: $primaryColor;
         padding: calc(50px - 4px) 0;
-        border-bottom: 4px solid #0c7cec;
+        border-bottom: 4px solid $primaryColor;
       }
     }
 
