@@ -73,6 +73,7 @@ main {
 
         .btn_main {
             @include btn_main;
+            cursor: pointer;
             
             &.top {
                 padding: 16px 30px;
@@ -83,6 +84,11 @@ main {
 
             &.bottom {
                 padding: 10px 60px;
+            }
+
+            &:hover {
+                background-color: white;
+                color: $primaryColor;
             }
         }
     }
