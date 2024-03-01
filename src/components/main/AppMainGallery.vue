@@ -1,6 +1,12 @@
 <script>
+import ComicItem from './ComicItem.vue';
+
 export default {
     name: 'AppMainGallery',
+
+    components : {
+        ComicItem ,
+    }, 
 
     data() {
         return {
@@ -85,11 +91,36 @@ export default {
 </script>
 
 <template>
-    <h1>
-       ciao
-    </h1>
+    <div id="gallery">
+
+        <div class="comics_list">
+
+            <ComicItem
+            v-for="(currentComic, index) in comicsList"
+            :comicName="currentComic.series"
+            :comic-image="currentComic.thumb"
+            :comic-type="currentComic.type"
+            >
+            
+        
+        
+            </ComicItem>
+            
+
+        </div>
+
+
+    </div>
+
+
+
 </template>
 
 <style lang="scss">
 
+    .comics_list {
+        display: flex;
+        flex-flow: row wrap;    
+        gap: 26px;
+    }
 </style>
