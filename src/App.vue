@@ -1,6 +1,6 @@
 <script>
 import AppNav from './components/AppNav.vue';
-import AppMainContent from './components/AppMainContent.vue';
+import AppMainContent from './components/main/AppMainContent.vue';
 import AppFooter from './components/footer/AppFooter.vue';
 
 export default {
