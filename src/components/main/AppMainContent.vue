@@ -17,8 +17,16 @@ export default {
         <div class="main_img"></div>
         
         <div class="container">
+
+            <button class="btn_main top">
+                Current Series
+            </button>
             
             <AppMainGallery></AppMainGallery>
+
+            <button class="btn_main bottom">
+                Load More
+            </button>
             
         </div>
         
@@ -27,6 +35,15 @@ export default {
 </template>
 
 <style lang="scss">
+@use '../../styles/variables' as *;
+
+@mixin btn_main { 
+    background-color: $primaryColor;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid $primaryColor;
+}
+
 main {
     background-color: #1c1c1c;
     
@@ -41,7 +58,29 @@ main {
     }
 
     .container {
-        padding: 50px 10px;
+        padding: 50px 10px 20px;
+        flex-direction: column;
+        position: relative;
+
+        #gallery {
+            margin-bottom: 50px
+        }
+
+
+        .btn_main {
+            @include btn_main;
+            
+            &.top {
+                padding: 16px 30px;
+                position: absolute;
+                top: -22px;
+                left: -20px;
+            }
+
+            &.bottom {
+                padding: 10px 60px;
+            }
+        }
     }
 }
 </style>
