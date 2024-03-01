@@ -1,12 +1,14 @@
 <script>
 
 import AppMainGallery from './AppMainGallery.vue';
+import AppMerch from './AppMerch.vue';
 
 export default {
     name: 'AppMainContent',
     
     components: {
         AppMainGallery,
+        AppMerch,
     } 
 }
 
@@ -29,9 +31,11 @@ export default {
             </button>
             
         </div>
-        
-
     </main>
+    
+    <AppMerch></AppMerch>
+
+    
 </template>
 
 <style lang="scss">

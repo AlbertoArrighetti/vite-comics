@@ -98,8 +98,9 @@ export default {
             <ComicItem
             v-for="(currentComic, index) in comicsList"
             :comicName="currentComic.series"
-            :comic-image="currentComic.thumb"
-            :comic-type="currentComic.type"
+            :comicImage="currentComic.thumb"
+            :comicYype="currentComic.type"
+            :comicPrice="currentComic.price"
             >
             
         
