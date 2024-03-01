@@ -40,7 +40,7 @@ export default {
 </template>
 
 <style lang="scss">
-@use '../styles/variables' as *;
+@use '../../styles/variables' as *;
 
 #footer_contacts{
     background-color: #303030;

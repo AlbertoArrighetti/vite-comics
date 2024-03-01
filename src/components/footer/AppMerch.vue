@@ -54,7 +54,7 @@ export default {
 </template>
 
 <style lang="scss">
-@use '../styles/variables' as *;
+@use '../../styles/variables' as *;
 
  #merch {
      padding: 50px 10px;
